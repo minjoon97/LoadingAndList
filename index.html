@@ -254,11 +254,6 @@
         $loadSquare.classList.remove("on");
       };
 
-      $item.forEach((item, index) => {
-        item.addEventListener("click", () => {
-          window.location.href = `project${index + 1}.html`;
-        });
-      });
 
       if (sessionStorage.getItem("introDisplayed") === "true") {
         $intro.classList.add("opacityZero");
